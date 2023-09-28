@@ -6,7 +6,7 @@ export const fetchGreetings = createAsyncThunk(
   async () => {
     const response = await axios.get('http://localhost:3000/api/greetings/index');
     return response.data;
-  }
+  },
 );
 
 const greetingsSlice = createSlice({
